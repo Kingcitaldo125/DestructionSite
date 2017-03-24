@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<!--
+SOURCES/REFERENCES:
+http://www.rotrgame.com/
+https://manu.ninja/webgl-3d-model-viewer-using-three-js
+-->
+
+<html lang="en">
+
+<head>
+<meta charset=utf8>
+<title>Destruction main page</title>
+
+<style>
+div.center iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+
+<!--Cascading Style Sheets-->
+<link rel="stylesheet" type="text/css" href="../css/mystyle.css"></link>
+<!--End Cascading Style Sheets-->
+
+<!--Javascript-->
+<script src="../js/jquery-3.1.1.js"></script>
+<!--script src="../js/twitterbot.js"></script-->
+<!--End Javascript-->
+
+<h1 class="title">
+PROJECT DESTRUCTION
+</h1>
+
+</head>
+
+<!--
+WIKI:
+http://project-destruction.wikia.com/wiki/Project_Destruction_Wikia
+-->
+
+<body style="background:black;">
+<script>
+	"use strict";
+	var poss = ["Purchase Today!", "You Know It!", "The Very Best!", "Nothing Else Like It!",
+	"Buildings, Destruction and Fun! Oh My!", "Have we told you about the Mech suit?!?"];
+	
+	function ranInt(max, min)
+	{
+		var vv = Math.floor((Math.random() * max) + min);
+		return vv;
+	}
+	
+	function main()
+	{
+		var text;
+		text = poss[ranInt(poss.length-1, 0)];//replace later
+		document.write("<marquee class='mark'>"+ text +"</marquee>");
+	}
+	
+	main();
+</script>
+</br>
+</br>
+<hr>
+</br>
+
+
+<div class="content">
+	<a class="links" href="./site.html">Home</a>
+	<a class="links" href="./weapons.html">Weapons</a>
+	<a class="links" href="./environment.html">Environment</a>
+	<a class="links" href="./credits.html">Credits</a>
+	<a class="links" href="http://project-destruction.wikia.com/wiki/Project_Destruction_Wikia">Project Destruction Wiki</a>
+</div>
+</br>
+<hr>
+
+<!-->INSERT AWESOME GAME IMAGE HERE<-->
+<p class="bigtextcenter">A game about destroying buildings, 
+fighting with other players
+and having fun.
+Created with Unreal Engine 4.
+</p>
+
+</br>
+
+<p class="bigtextcenter">ABOUT:</p>
+
+<p class="regulartext">
+Project Destruction is a 3D 1st person multiplayer survival combat game.
+</p>
+<p class="regulartext">
+The project is being developed by the senior class of 2017 at Shawnee State University.
+</p>
+<p class="regulartext">
+Up to 8 players will spawn into an abandoned procedurally generated city with the goal of 
+collecting weapons and utility items to defeat other players.
+</p>
+<p class="regulartext">
+The objective of each player is to be the last man/woman standing by using both 
+the environment and weapons to their advantage.
+</p>
+<p class="regulartext">
+The players have a time limit they must abide by,
+and must fight towards the center of the city as the outer edges
+of the city are destroyed at set intervals.
+</p>
+
+</br>
+<hr>
+</br>
+
+<p class="bigtextcenter">GAMEPLAY:</p>
+
+<p class="regulartext">
+Building Destruction Demo
+</p>
+
+<div class="center">
+	<iframe width="854" height="480" src="https://www.youtube.com/embed/rNz17p2pT9k" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p class="regulartext">
+The center point of the interest in the gameplay is the interactive
+and destructible nature of the city, 
+</p>
+<p class="regulartext">
+along with the unique weapons that
+further these interactions. The game will forgo the weaponry of traditional shooters,
+instead focusing on more exotic weaponry and melee combat.
+</p>
+
+<p class="regulartext">
+The players will be able to be thrown around from forces
+from the weapons and devices which will create a fun,
+</p>
+<p class="regulartext">
+yet somewhat chaotic gameplay that allows the players to 
+find creative ways to kill other and launch them around for 
+increased damage and demolition.
+</p>
+
+</br>
+
+<p class="bigtextcenter">
+For more info about Project Destruction, 
+please visit the links at the top of the page
+</p>
+
+</br>
+<hr>
+</br>
+
+<p class="extrabigasstextcenter">Like us on Facebook!</p>	
+
+<div class="images">
+	<a href="https://www.facebook.com/DestructProject/" target="_blank">
+		<img class="center" border="0" alt="Facebook" src="../media/facebook-b.png" onmouseover="this.src='../media/facebook.png'" onmouseout="this.src='../media/facebook-b.png'"/>
+	</a>
+</div>
+
+<p class="extrabigasstextcenter">Follow us on Twitter!</p>
+
+<div class="images">
+	<a href="https://twitter.com/DestructProject" target="_blank">
+		<img class="center" border="0" alt="Twitter" src="../media/twitter-b.png" onmouseover="this.src='../media/twitter.png'" onmouseout="this.src='../media/twitter-b.png'"/>
+	</a>
+</div>
+
+</br>
+	
+<footer>
+	<p class="extrabigasstextcenter">Contact Us</p>
+	<p class="bigtextcenter"><a href="mailto:ssuprojectdestruction@gmail.com?Subject=Hello">ssuprojectdestruction@gmail.com</a></p>
+	
+	</br>
+	
+	<!--Google Maps API-->
+	<a href="http://www.shawnee.edu/"><img class="center" src="../media/sean.jpg" width="150" height="150"/></a>
+	<p class="bigtextcenter">Shawnee State University</p>
+	<p class="bigtextcenter">940 2nd Street Portsmouth, Ohio 45662</p>
+	<div id="map"></div>
+	<script>
+		function initMap() 
+		{
+			var uluru = {lat: 38.730732, lng: -82.993930};
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  zoom: 16,
+			  center: uluru
+			});
+			var marker = new google.maps.Marker({
+			  position: uluru,
+			  map: map
+			});
+		}
+		google.maps.event.addDomListener(window, "load", initMap);
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx_jFhuMFNu62Y7A9aTID-fQLgJhY4PDM&callback=initMap">
+	</script>
+	
+	</br>
+	
+	<div class="wrapper">
+		<!--BUTTON-->
+		<a class="button" href="#top" class="button"><span>Back to Top</span></a>
+	</div>
+</footer>
+
+</body>
+
+</html>
+

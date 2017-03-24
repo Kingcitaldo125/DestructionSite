@@ -1,0 +1,225 @@
+marquee.mark{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	font-size: 32px;
+	color: white;
+}
+hr{
+    border-color: rgb(157,121,83);
+}
+h1.title{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	font-size: 64px;
+	color: white;
+	text-align: center;
+}
+h2.largeheader{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+}
+h3.mediumH{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+}
+p.title{
+	font-family: "Lucida Console", Times, serif;
+	font-size: 18px;
+}
+p.bigtextleft{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: white;
+	text-align: left;
+	font-size: 25px;
+}
+p.bigtextcenter{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+p.extrabigasstextcenter{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+p.smalltextleft{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: white;
+	text-align: left;
+	font-size: 15px;
+}
+p.smalltextcenter{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+}
+p.regulartext{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+p.regulartextcenter{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+p.regulartextleft{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: white;
+	text-align: left;
+	font-size: 20px;
+}
+p.smalltextred{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: red;
+	text-align: center;
+	font-size: 15px;
+}
+p.bigtextgreen{
+	font-family: "Impact", Charcoal, sans-serif
+	"Comic Sans MS", cursive, sans-serif;
+	color: green;
+	text-align: center;
+	font-size: 25px;
+}
+a.twitter-timeline{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+a.links{
+	text-align: center;
+	color: white;
+	padding-left: 115px;
+	padding-right: 115px;
+}
+a.linkscenter{
+	color: white;
+	padding-left: 115px;
+	padding-right: 115px;
+}
+a.bigasslink{
+	font-size: 150px;
+	color: white;
+	padding-left: 115px;
+	padding-right: 115px;
+}
+a.headerlinks{
+	float: middle;
+	color: black;
+	padding-left: 80px;
+	padding-right: 50px;
+}
+img.left{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.right{	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+ul{
+    background: white;
+    padding: 20px;
+}
+ul li{
+	background: white;
+	margin: 5px;
+}
+.wrapper{
+	text-align: center;
+}
+a.button{
+	color: black;
+	float: center;
+}
+.button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	transition: all 0.5s;
+    font-size: 25px;
+	float: center;
+}
+.button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after{
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span{
+  padding-right: 25px;
+}
+
+.button:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+.imagecontainer{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30px;
+}
+#map{
+	width: 100%;
+	height: 400px;
+	background-color: grey;
+}
+#images{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+#container{
+	text-align: center;
+}
+#clink{
+	margin: auto;
+	color: white;
+	display: inline-block;
+	padding: 10px;
+}
+#parent{
+	text-align: center;
+}
